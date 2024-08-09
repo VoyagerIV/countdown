@@ -47,7 +47,7 @@ export default function BasicDatePicker() {
     
     setShowConfetti(false)
 
-    if (intervalID != -1) {
+    if (intervalID !== -1) {
       clearInterval(intervalID);
       setIntervalProgress(0);
     }
