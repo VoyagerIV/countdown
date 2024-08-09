@@ -44,6 +44,8 @@ export default function BasicDatePicker() {
 
   useEffect(() => {
     if (dateString === "" || timeString === "") return;
+    
+    setShowConfetti(false)
 
     if (intervalID != -1) {
       clearInterval(intervalID);
